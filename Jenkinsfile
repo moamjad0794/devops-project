@@ -8,6 +8,10 @@ pipeline {
         jdk 'JDK11'     // Ensure JDK is installed and configured in Jenkins
     }
 
+    environment {
+        PATH = "/usr/bin:$PATH"
+    }
+
     stages {
         stage('Build') {
             steps {
