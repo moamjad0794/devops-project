@@ -2,12 +2,7 @@ pipeline {
     agent {
         node 'maven'
     }
-
-    tools {
-        maven 'Maven3'  // Ensure Maven is installed on Jenkins and configured
-        jdk 'JDK11'     // Ensure JDK is installed and configured in Jenkins
-    }
-
+    
     environment {
         PATH = "/usr/bin:$PATH"
     }
